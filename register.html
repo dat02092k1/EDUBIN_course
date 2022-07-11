@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+       <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>  -->
+      <link rel="icon" type="image/x-icon" href="/images/image_icon/favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+</head>
+<body>
+  <header class="header-part">
+    <div class="header-top bg-[#07294d]  pt-4 pb-4 pl-5"> 
+        <div class="container mx-auto px-8">
+            <div class="row flex justify-center md:justify-between">
+                <div class="col-md-6 flex">
+                    <!-- header contact -->
+                    <div class="header-contact text-[#c6c6c6] md:flex hidden">
+                        <ul class="flex space-x-4">
+                            <li><i class="fa fa-envelope"></i><a href="#">info@yourmail.com</a></li>
+                            <li><i class="fa fa-phone"></i><span>+0123-456-5678</span></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-md-6 flex">
+                    <!-- header right -->
+                    <div class="header-right flex text-[#c6c6c6]">
+                        <!-- header social -->
+                        <div class="header-right social flex space-x-1"> 
+                            <span class="follow-us hidden sm:block">Follow Us : </span>
+                                <ul class="flex space-x-2 items-center justify-end">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                   
+                                </ul>
+                        </div>
+                        <!-- header login -->
+                        <div class="header-right login flex pl-6">
+                                <ul class="flex space-x-2 text-[#ffd43f]">
+                                    <li><a href="register.html">Login</a></li>
+                                    <li> / </li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <di class="header-nav ">
+        <div class="container mx-auto px-8">
+            <div class="row">
+                
+                    <nav class="navbar flex justify-center  py-5">
+                        
+                                <div class="navbar-logo flex-1">
+                                    <a class="navbar-logo" href="" >
+                                <img class="" src="images/image_icon/logo.png" height="50px" width="180px" alt="">
+                            </a>    
+                        </div> 
+                        <div class="navbar-menu flex"> 
+                            <ul class="nav-items md:flex hidden space-x-4">
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">PAGES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">COURSES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">EVENTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">TEACHERS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">SHOP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover:text-amber-400 ..." href="">CONTACTS</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                         <div class="navbar-right pl-7 flex-2">
+                            <ul class="flex space-x-4">
+                                <li>
+                                    <a href="" id="list">
+                                        <i class="fa-solid fa-bars md:hidden"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" id="search">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" id="cart">
+                                        <i class="fa fa-shopping-bag"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav>
+
+                </div>
+            </div>  
+    </div>
+</header>  
+
+    <section id="register-part" class="">
+        <div class="container">
+             <div class="register-above relative ">
+                <img class="h-[300px] object-cover w-full" src="images/image_icon/news_image_3.jpeg" alt="">
+          
+            <div class="text  text-white bg-blue-800 opacity-[0.8] w-full h-full absolute top-0 px-5 py-14">
+                <h2 class="text-3xl">Student Registration</h2>
+                <div class="flex">
+                    <h3>Home </h3> /
+                    <h3>Student Registration</h3>
+                </div>
+            </div>
+        </div> 
+        <div class="register-form  ">
+        <form name="myform" method="post" onsubmit="return validateform()" class="grid grid-cols-2 gap-5 px-10 py-10">  
+            <div class="mb-4 ">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="first_name">
+                  First Name
+                </label>
+                <input   class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="firstname" name="firstname" type="text" placeholder="First Name">
+                 
+            </div> 
+            
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="last_name">
+                 Last Name
+                </label>
+                <input required class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="lastname" name="lastname" type="text" placeholder="Last Name">
+                   
+            </div>
+            
+            <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="user_name">
+                      Username
+                    </label>
+                    <input required class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="username" name="username" type="text" placeholder="Username">
+                      
+            </div>
+            <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                          Email
+                        </label>
+                        <input required class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="email" name="email" type="text" placeholder="Email">
+                         
+            </div>
+            <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                             Password
+                            </label>
+                            <input  required class="border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="password" name="password" type="password" placeholder="Password">
+                              
+            </div>
+            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="password-confirm">
+                                Password Confirmation
+                                </label>
+                              <input required class=" border rounded w-full py-2 px-3 text-gray-700 mb-3" id="password-confirm" name="passwordconfirm" type="password" placeholder="Password Confirmation">
+                              
+            </div>
+            <div class="mb-4 col-start-2 text-right">
+              <input class="bg-[#0C2338] text-white py-3 px-[8px] rounded-[3px] font-[400]" type="submit" value="Register">  
+            </div>
+                
+            </form>  
+        </div>
+        </div>
+    </section>
+
+    <script>
+function validateform(){  
+var first_name=document.myform.firstname.value;  
+var last_name=document.myform.lastname.value;
+var user_name=document.myform.username.value;
+var email=document.myform.email.value;
+var password=document.myform.password.value;  
+var passwordConfirm=document.myform.passwordconfirm.value; 
+if (first_name==null || first_name==""){  
+  alert("First Name can't be blank");  
+  return false;  
+}
+if (last_name==null || last_name==""){  
+  alert("Last Name can't be blank");  
+  return false;  
+}
+if (user_name==null || user_name==""){  
+  alert("User name can't be blank");  
+  return false;  
+}
+if (email==null || email==""){  
+  alert("Email can't be blank");  
+  return false;  
+}
+if (password.length < 6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+}  
+if (passwordConfirm==null || passwordConfirm=="" || passwordConfirm != password){  
+  alert("Uncorrect password");  
+  return false;  
+}
+}  
+    </script>
+</body>
+
+<footer class="mt-[50px]">
+  <div class="bg-[#07294d]">
+    <div class="container mx-auto px-8 footer-top md:flex tracking-wider text-white pt-[40px] pb-[70px] justify-between items-start">
+      <div class="flex-[3_3_0%] p-5">
+        <img src="https://thepixelcurve.com/html/edubin/images/logo-2.png" alt="" />
+        <p class="text-xl mb-[25px] leading-10 font-[600] mt-[25px]">
+          Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons
+          equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh
+          vulputate.
+        </p>
+        <div class="flex space-x-4 items-center text-xl">
+          <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+            <a href="#" class="text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+          </span>
+          <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </span>
+          <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          </span>
+          <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="flex-[3_3_0%] p-5">
+        <h6 class="text-[25px] pb-[20px] font-[1000]">Sitemap</h6>
+        <div class="flex text-xl">
+          <ul class="flex-1">
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Home</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">About us</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Courses</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">News</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Event</a></li>
+          </ul>
+          <ul class="flex-1">
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Gallery</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Shop</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Teachers</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Support</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="flex-[2_2_0%] p-5">
+        <h6 class="text-[25px] pb-[20px] font-[1000]">Support</h6>
+        <ul class="text-xl">
+          <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">FAQS</a></li>
+          <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#"></i>Pricacy</a></li>
+          <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Policy</a></li>
+          <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Support</a></li>
+          <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="flex-[3_3_0%] p-5">
+        <h6 class="text-[25px] pb-[20px] font-[1000]">Contact Us</h6>
+        <div class="flex flex-row pt-5">
+          <div><i class="fa-solid fa-house-chimney text-amber-400 mr-5 text-xl"></i></div>
+          <div class="text-xl font-[600]">
+            143 castle road 517 district, kiyev port south Canada
+          </div>
+        </div>
+        <div class="flex items-center pt-5">
+          <div><i class="fa-solid fa-phone text-amber-400 mr-5 text-xl"></i></div>
+          <p class="text-xl font-[600]">
+            +3 123 456 789
+         </p>
+        </div>
+        <div class="flex items-center pt-5">
+          <div><i class="fa-regular fa-envelope text-amber-400 mr-5 text-xl"></i></div>
+          <p class="text-xl font-[600]">
+            info@yourmail.com
+          </p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom flex bg-[#021d3a] p-[28px] text-white text-[18px] tracking-wider">
+    <div class="flex-1 text-center font-[500]">
+      © Copyrights 2020 Edubin All rights reserved.
+    </div>
+    <div class="flex-1 text-right pr-[50px]">Designed by <b class="font-[1000]">Pixelcurve</b></div>
+  </div>
+</footer>
+</html>

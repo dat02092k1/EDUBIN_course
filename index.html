@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="dropdown.css">
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+       <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>  -->
+      <link rel="icon" type="image/x-icon" href="/images/image_icon/favicon.png">
+   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+      
+    <title>Edubin - LMS Education HTML Template</title>
+    
+</head>
+<body class="overflow-x-hidden">
+    
+    <header class="header-part fixed bg-white w-full ">
+        <div class="header-top bg-[#07294d]  pt-4 pb-4 pl-5"> 
+            <div class="container mx-auto px-8">
+                <div class="row flex justify-center md:justify-between">
+                    <div class="col-md-6 flex">
+                        <!-- header contact -->
+                        <div class="header-contact text-[#c6c6c6] md:flex hidden">
+                            <ul class="flex space-x-4">
+                                <li><i class="fa fa-envelope"></i><a href="#">info@yourmail.com</a></li>
+                                <li><i class="fa fa-phone"></i><span>+0123-456-5678</span></li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="col-md-6 flex">
+                        <!-- header right -->
+                        <div class="header-right flex text-[#c6c6c6]">
+                            <!-- header social -->
+                            <div class="header-right social flex space-x-1"> 
+                                <span class="follow-us hidden sm:block">Follow Us : </span>
+                                    <ul class="flex space-x-2 items-center justify-end">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                       
+                                    </ul>
+                            </div>
+                            <!-- header login -->
+                            <div class="header-right login flex pl-6">
+                                    <ul class="flex space-x-2 text-[#ffd43f]">
+                                        <li><a href="register.html">Login</a></li>
+                                        <li> / </li>
+                                        <li><a href="register.html">Register</a></li>
+                                    </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <di class="header-nav relative">
+            <div class="container mx-auto px-8">
+                <div class="row">
+                    
+                        <nav class="navbar flex justify-center  py-5">                      
+                                    <div class="navbar-logo md:flex-1">
+                                        <a class="navbar-logo" href="" >
+                                    <img class="" src="images/image_icon/logo.png" height="50px" width="180px" alt="">
+                                </a>    
+                            </div> 
+                            <div class="navbar-menu flex"> 
+                                <ul class="nav-items md:flex md:items-center hidden space-x-4">
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">PAGES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">COURSES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">EVENTS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">TEACHERS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">BLOG</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">SHOP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="hover:text-amber-400 ..." href="">CONTACTS</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                             <div class="navbar-right  md:pl-7 flex">
+                                <ul class="list flex items-center space-x-4">
+                                    <li class="lit">
+                                        <button onclick="dropDown()" type="button" class="btn_dropdown">
+                                            
+                                                <i class="fa-solid fa-bars md:hidden"></i>
+                                            
+                                        </button>
+                                        <div class="cont_dropdown absolute left-0 w-full">
+                                            <a href="#">Home</a>  
+                                            <hr>
+                                            <a href="#">Courses</a>
+                                            <hr>
+                                            <a href="#">Pages</a>
+                                            <hr>
+                                            <a href="#">Events</a>
+                                            <hr>
+                                            <a href="#">Blog</a>
+                                            <hr>
+                                            <a href="#">Shop</a>
+                                            <hr>
+                                            <a href="">Contact</a>
+                                          </div>
+                                            
+    
+                                    </li>
+                                    <li>
+                                        <a href="" id="search">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" id="cart">
+                                            <i class="fa fa-shopping-bag"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </nav>
+
+                    </div>
+                </div>  
+        </div>
+    </header> 
+
+    
+        <section id="slide-part" class="slider-active flex justify-center relative mb-28"> 
+            <div class="slick-sliders relative top-0 left-0 w-full ">
+                <!-- <img src="images/image_icon/thumbnail.jpg" alt=""> -->
+                <div class="slick-slider">
+                    <img class="" src="images/image_icon/s-1.jpg" alt="" width="100%">
+                </div>
+                <div class="slick-slider">
+                    <img src="images/image_icon/thumbnail.jpg" alt="" width="100%">
+                </div>
+                <div class="slick-slider">
+                    <img src="images/image_icon/student_background.jpg" alt="" width="100%">
+                </div> 
+            </div>     
+            <button class="pre_arr  "><i class="fa-solid fa-angle-left"></i></button>      
+            <button class="next_arr  "><i class="fa-solid fa-angle-right"></i></button>   
+            <!-- <div class="slick-child-sliders">
+                
+            </div> -->
+            <div class="category bg-[#07294d] w-[90%] bottom-[-30px]   absolute w-full md:w-[80%]  md:-bottom-28 rounded-xl pt-4 md:pt-10 pb-5 md:pb-8 md:ml-20 md:mr-20 z-[5]">
+                <div class="container">
+                    <div class="md:flex justify-center items-center  px-8">
+                        <div class="category-text w-full md:w-5/12">
+                            <h2 class="md:text-3xl text-center text-[10px] mb-3 font-bold md:text-center text-white">Best Platform to Learn Everything</h2>
+                        </div>
+                        <button class="pre-arr "><i class="fa-solid fa-angle-left"></i></button>    
+                        <div class="slick-child-sliders w-7/12 py-0 px-5 mx-auto">
+                            <div class="slick-child-slider md:p-[20px]  bg-[#f6316f] mx-3">
+                                <a class=" text-center" href="">
+                                    <img src="images/image_icon/courses.png" class="mx-auto" alt="">
+                                    <h3 class="text-lg text-white text-center font-bold">Courses</h3>
+                                </a>
+                            </div>
+                            <div class="slick-child-slider mx-3 md:p-[20px] bg-[#b5d56a]">
+                                <a class="" href="">
+                                    <img src="images/image_icon/programs.png" class="mx-auto" alt="">
+                                    <h3 class="text-lg text-white text-center font-bold">Programs</h3>
+                                </a>
+                            </div>
+                            <div class="slick-child-slider mx-3 md:p-[20px] bg-[#ff6f6f]">
+                                <a class="" href="">
+                                    <img src="images/image_icon/events.png" class="mx-auto" alt="">
+                                    <h3 class="text-lg text-white text-center font-bold">Events</h3>
+                                </a>
+                            </div>
+                            <div class="slick-child-slider mx-3 md:p-[20px] bg-[#4785fe]">
+                                <a class="bg-[#ff6f6f]" href="">
+                                    <img src="images/image_icon/admissions.png" class="mx-auto" alt="">
+                                    <h3 class="text-lg text-white text-center font-bold">Admissions</h3>
+                                </a>
+                            </div>
+                            
+                        </div>
+                          
+                        <button class="next-arr "><i class="fa-solid fa-angle-right"></i></button> 
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto px-8 absolute top-[150px] left-0 w-full">
+                <div class="row">
+                    <div class="slider-contents text-white mt-[250px] md:mt-[210px] mb-5 pl-7"> 
+                        
+                        <div data-aos="fade-down-right  ">  <!--md:pt-20 md:pb-6-->
+                            <h1 class="text-h1 font-bold md:text-6xl text-3xl mt-[-108px] md:mt-0">Choose the right <br> theme for education</h1>
+                        </div>
+                        <div data-aos="fade-down-left" class="fade-p mb-7">
+                            <p class="md:text-xl text-xs font-3vw md:my-5 my-1 md:pb-5">
+                                Donec vitae sapien ut libearo venenatis faucibus. 
+                                Nullam quis orci eget eros <br> faucibus tincidunt  
+                                Sed fringilla mauri amet nibh.
+                            </p>
+                        </div>
+                        
+                        <span>
+                            <a class="slide-btn bg-amber-400 md:text-xl text-xs text-black rounded-md mr-5 py-2 px-5" href=""> Apply Now </a>  
+                        </span>
+                        <span>
+                            <a class="slide-btn bg-white md:text-xl text-xs text-black rounded-md mr-5 py-2 px-5" href="">Learn More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>   
+            
+        </section>
+    
+        <section id="about-part" class="about-active pt-9 pb-16  bg-[#fbfbfb]">
+            <div class="container mx-auto px-8">
+                <h5 class="text-lg">About us</h5>
+                <!-- <hr class="line" color="#fbbf24"  width="50px"> -->
+                <div class="line w-[35px] h-[2px] bg-amber-400"></div>
+                <br>
+                <div class="row block md:flex ">
+                    <div class="left flex-1">   
+                        <div data-aos="fade-up-right" style="margin-bottom: 30px;">
+                            <h1 class="text-5xl">Welcome to Edubin</h1>
+                        <p class="welcome-p pt-7 mb-9">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aspernatur cupiditate corporis sunt id rem nam fugiat iste cum velit rerum ut, reiciendis atque repudiandae nulla. Illum quidem sit iusto.
+                        </p>
+                        <p class="mb-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est beatae soluta sunt cum neque aspernatur dolore earum fugiat officiis temporibus! Mollitia consequuntur illum commodi voluptate ullam numquam, animi optio quisquam!
+                        </p>
+                        <p class="mb-9">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati hic itaque, non sequi nemo nesciunt a blanditiis animi in, natus et, odio harum voluptates quaerat qui. Sapiente, expedita quae!
+                        </p>
+                        <br class="">
+                        <span class="learn-more bg-amber-400 text-xl rounded-md mb-3 mr-5 p-2 text-black "> <a href="">Explore More</a> </span>
+                        </div>     
+                        
+                    </div>
+        
+                    <div class="right bg-white  pl-5 rounded-sm flex-1"> 
+                        <div data-aos="fade-up-left">
+                            <h1 class="text-4xl">Upcoming events</h1>
+                        <br>
+                        <ul>
+                            <li>
+                                <!-- <span>
+                                    <i class="fa fa-calendar text-amber-300"> </i> 2 December 2018
+                                </span> -->
+                                
+                                <a class="mb-2" href=""> <h3 class="text-xl font-bold">World University Convocation</h3>
+                                </a>
+                                <span class="pr-4 mt-4">
+                                    <i class="fa-solid fa-clock text-amber-300"></i> 12:00 Am To 11:59 Pm
+                                </span>
+                                
+                            </li>
+                            <br>
+                            <hr>
+                            <br>
+                            <li>
+                                <!-- <span>
+                                    <i class="fa fa-calendar text-amber-300"> </i> 2 December 2018
+                                </span> -->
+                                <span>
+                                    <i class="fa fa-calendar text-amber-300"> </i> 2 December 2018
+                                </span>
+                                <br>
+                                <a href=""> <h3 class="text-xl font-bold">February Education Conferences</h3>
+                                </a>
+                                
+                                <span class="pr-4">
+                                    <i class="fa-solid fa-clock text-amber-300"></i> 12:00 Am - 1:30 Pm
+                                </span>
+                                
+                            </li>
+                            <br>
+                            <hr>
+                            <br>
+                            <li>
+                                <a class="mb-2" href=""> <h3 class="text-xl font-bold">The Games Education Summit</h3>
+                                </a>
+                                <span class="pr-4 mt-4">
+                                    <i class="fa-solid fa-clock text-amber-300"></i> 12:00 Am To 11:59 Pm
+                                </span>
+                            </li>
+                        </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="apply-part">
+              
+            <div class="container mx-auto px-8 pb-20">
+                <div class="row grid grid-cols-1 md:grid-cols-2">
+                    <div data-aos="zoom-in-right">
+                        <div class="apply-left  bg-[#06284c] mb-3 text-white pb-11">
+                            <h3 class="apply p-5 text-3xl">Apply for Fall 2019</h3>
+                            <p class="apply pl-5 pb-12">Gravida nibh vel velit auctor aliquetn sollicitudirem <br>
+                                 sem quibibendum 
+                                auci elit cons equat ipsutis sem <br>
+                                 nibh id elituis sed odio sit amet nibh 
+                                vulputate <br> cursus equat ipsutis.</p>
+                            <a class="apply-btn bg-amber-400 text-xl ml-6 rounded-md p-2 text-black" href="">Apply Now</a>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-left">
+                        <div class="apply-right  bg-[#092e56]   text-white pb-11">
+                            <h3 class="apply p-5 text-3xl">Apply for Scholarship
+                            </h3>
+                            <p class="apply pl-5 pb-12">Gravida nibh vel velit auctor aliquetn sollicitudirem <br>
+                                sem quibibendum 
+                               auci elit cons equat ipsutis sem <br>
+                                nibh id elituis sed odio sit amet nibh 
+                               vulputate <br> cursus equat ipsutis.</p>
+                               <a class="apply-btn bg-amber-400 text-xl ml-6 rounded-md p-2 text-black" href="">Apply Now</a>
+                        </div> 
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <section id="featured-courses"> 
+            <div class="container mx-auto px-8 md:pb-40 bg-[#f9f9f9]">
+                <div class="row">
+                        <h3 class="text-xl font-bold mb-3">Our course</h3>
+                        <div class="line w-[35px] h-[2px] bg-amber-400 mb-3"></div>  
+                    
+                    <div class="under flex justify-between">
+                        <h1 class="sm:text-5xl text-4xl font-bold ">Featured Courses</h1>
+                        <div class="arr flex">
+                            <button class="self-arr-pre "><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="self-arr-next "><i class="fa-solid fa-angle-right"></i></button>
+                            
+                            <!-- <button class="self-arr-pre2   md:hidden"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="self-arr-next2   md:hidden"><i class="fa-solid fa-angle-right"></i></button>  -->
+                        </div>
+                    </div>
+        
+                    <div class="courses-slick-items">
+                        
+                </div>
+                    <div class="res-slick md:hidden">
+    
+                    </div>
+            </div>
+        </section>
+        <section id="facilities-part" class="bg-[url('https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/08/edu-bg.jpg')] bg-right md:bg-center pb-56 bg-no-repeat">
+            <div class="container mx-auto px-4 relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 ">
+                    <div class="facilities-left pt-28 pl-14 flex justify-center items-center">
+                        <div class="video mt-4">
+                            <a class="Video-popup text-white items-center bg-amber-400 flex rounded-full justify-center w-[50px] h-[50px]" href="https://www.youtube.com/watch?v=hF12jIJkPZA">
+                                <i class="fa fa-play  text-center "></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="facilities-right text-white mt-8 md:ml-16">
+                        <div class="features">
+                            <div class="features-title">
+                                <h3 class=" text-2xl mt-4 font-['Montserrat'] font-bold">Our Facilities</h3>
+                            </div> 
+                            <ul class="features-items mt-4">
+                                <li class="features-item flex mt-10 mb-4">
+                                    <div class="features-icon mt-3"> 
+                                        <img src="images/image_icon/facilites_certificate.png" alt="">
+                                    </div>
+                                    <div class="features-content ml-3">
+                                        <h4 class="text-lg font-bold">Global Certificate</h4> 
+                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons 
+                                            solliazcitudirem sem quibibendum sem nibhutis.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="features-item flex mt-10 mb-4">
+                                    <div class="features-icon mt-3"> 
+                                        <img src="images/image_icon/facilites_support.png" alt="">
+                                    </div>
+                                    <div class="features-content ml-3">
+                                        <h4 class="text-lg font-bold">Alumni Support</h4>
+                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons 
+                                            solliazcitudirem sem quibibendum sem nibhutis.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="features-item flex mt-10 mb-4">
+                                    <div class="features-icon mt-3"> 
+                                        <img src="images/image_icon/facilites_book.png" alt="">
+                                    </div>
+                                    <div class="features-content ml-3">
+                                        <h4 class="text-lg font-bold">Books & Library</h4>
+                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons 
+                                            solliazcitudirem sem quibibendum sem nibhutis.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="feature-teacher">
+            <div class="container mx-auto px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 pt-4"> 
+                    <div class="ft-left ">
+                        <h5 class="font-bold">Teachers</h5>
+                        <div class="line w-[35px] h-[2px] bg-amber-400 mt-3 mb-3"></div>
+                        <h1 class="font-bold text-5xl mb-6">Meet our Teachers</h1> 
+    
+                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem
+                            <br> quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed <br>
+                             odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan <br>
+                              ipsum velit. Nam nec tellus a odio tincidunt mauris.
+                              <br>
+                              <br>
+                            Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet <br>
+                             nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. <br>
+                              Nam nec tellus a odio tincidunt mauris
+                            <br>
+                            <br>
+                            Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet <br>
+                            nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. <br>
+                             Nam nec tellus a odio tincidunt mauris</p>
+                             <br>
+                             <br>
+                        <a class="bg-amber-400 text-l rounded-md mr-5 p-5 text-black font-bold" href="#">Career with Us</a>
+                    </div>
+                    <div class="ft-right grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6 mt-10">
+                        <div class="teacher-item relative">
+                            <img src="images/image_icon/teacher_1.jpg" alt="">
+                            <div class="description absolute bottom-5 bg-white right-5 left-5 text-center">
+                                <h6 class="text-blue-900 font-bold">Darmian Green</h6>
+                                <span class="opacity-50">Chairman</span>
+                            </div>
+                        </div>
+                        <div class="teacher-item relative">
+                            <img src="images/image_icon/teacher_2.jpg" alt="">
+                            <div class="description absolute bottom-5 bg-white right-5 left-5 text-center">
+                                <h6 class="text-blue-900 font-bold">Rebeak Alig</h6>
+                                <span class="opacity-50">Art Teacher</span>
+                            </div>
+                        </div>
+                        <div class="teacher-item relative">
+                            <img src="images/image_icon/teacher_3.jpg" alt="">
+                            <div class="description absolute bottom-5 bg-white right-5 left-5 text-center">
+                                <h6 class="text-blue-900 font-bold">Hanna Ben</h6>
+                                <span class="opacity-50">Teacher</span>
+                            </div>
+                        </div>
+                        <div class="teacher-item relative">
+                            <img src="images/image_icon/teacher_4.jpg" alt="">
+                            <div class="description absolute bottom-5 bg-white right-5 left-5 text-center">
+                                <h6 class="text-blue-900 font-bold">Mark Alen</h6>
+                                <span class="opacity-50 text-gray-600">Teacher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="book-store" class="mt-7 bg-white"> 
+            <div class="container mx-auto px-8">
+                <div class="row grid grid-cols-2 mb-6"> 
+                    <div class="pub-things md:flex"> 
+                        <div class="pub-left my-3">
+                            <h5 class="font-bold text-base">Book Store</h5>  
+                        <div class="line w-[35px] h-[2px] bg-amber-400 mt-3 mb-3"></div>
+                        <h1 class="font-bold text-3xl md:text-5xl">Publications</h1>
+                        </div>
+                        <div class="pub-right absolute my-6 md:right-6">
+                            <a class="bg-amber-400  text-l rounded-md mr-5 p-5 text-black font-bold" href="#">All Products</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 p-3 mt-[75px] ">
+                    <div class="book-items p-8 bg-[#f9f9f9] mr-6 mb-4  relative">
+                        <img src="images/image_icon/book.jpg" alt="">
+                        <div class="btn-bookstore absolute top-0 left-0 w-full h-full bg-[#193960] opacity-[0.8] hidden justify-center items-center">
+                             
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale mr-2"><i class="text-[14px] fa fa-cart-shopping"></i></button>
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale"><i class="text-[14px] fa fa-magnifying-glass"></i></button>
+                          </div>
+                        <div class="book-des text-center">
+                            <h6 class="font-bold text-blue-900">React JS</h6>
+                            <span class="font-bold">$20</span>
+                        </div>
+                    </div>
+                    <div class="book-items p-8 bg-[#f9f9f9] mr-6 mb-4 relative">
+                        <img src="images/image_icon/book1.jpg" alt="">
+                        <div class="btn-bookstore absolute top-0 left-0 w-full h-full bg-[#193960] opacity-[0.8] hidden justify-center items-center">
+                             
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale mr-2"><i class="text-[14px] fa fa-cart-shopping"></i></button>
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale"><i class="text-[14px] fa fa-magnifying-glass"></i></button>
+                          </div>
+                        <div class="book-des text-center">
+                            <h6 class="font-bold text-blue-900">React JS</h6>
+                            <span class="font-bold">$20</span>
+                        </div>
+                    </div>
+                    <div class="book-items p-8 bg-[#f9f9f9] mr-6 relative">
+                        <img src="images/image_icon/book2.jpg" alt="">
+                        <div class="btn-bookstore absolute top-0 left-0 w-full h-full bg-[#193960] opacity-[0.8] hidden justify-center items-center">
+                             
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale mr-2"><i class="text-[14px] fa fa-cart-shopping"></i></button>
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale"><i class="text-[14px] fa fa-magnifying-glass"></i></button>
+                          </div>
+                        <div class="book-des text-center">
+                            <h6 class="font-bold text-blue-900">React JS</h6>
+                            <span class="font-bold">$20</span>
+                        </div>
+                    </div>
+                    <div class="book-items p-8 bg-[#f9f9f9] mr-6 relative">
+                        <img src="images/image_icon/book3.jpg" alt="">
+                        <div class="btn-bookstore absolute top-0 left-0 w-full h-full bg-[#193960] opacity-[0.8] hidden justify-center items-center">
+                             
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale mr-2"><i class="text-[14px] fa fa-cart-shopping"></i></button>
+                            <button class="border-solid bg-amber-400 border-[1px] border-Supernova rounded-full w-[40px] h-[40px] text-Supernova text-center hover:bg-Supernova hover:text-BlueWhale"><i class="text-[14px] fa fa-magnifying-glass"></i></button>
+                          </div>
+                        <div class="book-des text-center">
+                            <h6 class="font-bold text-blue-900">React JS</h6>
+                            <span class="font-bold">$20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="feedback-part" class="relative mt-8 bg-[url('images/image_icon/student_background.jpg')]">
+            <div class="ovl py-40">
+                <div class="container px-20">
+                    <div class="text text-white">
+                        <h1 class="text-xl  font-bold ">Feedback</h1>
+                                <div class="w-[42px] h-[3px] bg-amber-300 "></div>
+                                <div class="mt-4">
+                                    <h1 class="text-5xl font-bold ">What Students Say</h1>
+                                </div>
+                    </div>
+    
+                    <div class="slick-conts mt-10">
+                        <div class="slick-cont mr-4 text-white">
+                            <div class="cover flex">
+                                <div class="left mr-4 flex-grow">
+                                    <img class="" src="images/image_icon/student_1.jpg" alt="">
+                                </div>
+                                <div class="text flex-grow">
+                                    <p>Aliquetn sollicitudirem quibibendum auci elit cons 
+                                        equat ipsutis sem nibh id elit. Duis sed odio sit 
+                                        amet sem nibh id elit sollicitudirem </p>
+                                    <div class="author mt-4">
+                                        <h3 class="font-bold">Rubina Helen</h3>  
+                                        <span>Bsc, Engineering</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="slick-cont mr-4 text-white">
+                                <div class="cover flex">
+                                    <div class="left mr-4 flex-grow">
+                                        <img class="" src="images/image_icon/student_1.jpg" alt="">
+                                    </div>
+                                    <div class="text flex-grow">
+                                        <p>Aliquetn sollicitudirem quibibendum auci elit cons 
+                                            equat ipsutis sem nibh id elit. Duis sed odio sit 
+                                            amet sem nibh id elit sollicitudirem </p>
+                                        <div class="author mt-4">
+                                            <h3 class="font-bold">Rubina Helen</h3>  
+                                            <span>Bsc, Engineering</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                        <div class="slick-cont mr-4 text-white">
+                                    <div class="cover flex">
+                                        <div class="left mr-4 flex-grow">
+                                            <img class="" src="images/image_icon/student_1.jpg" alt="">
+                                        </div>
+                                        <div class="text flex-grow">
+                                            <p>Aliquetn sollicitudirem quibibendum auci elit cons 
+                                                equat ipsutis sem nibh id elit. Duis sed odio sit 
+                                                amet sem nibh id elit sollicitudirem </p>
+                                            <div class="author mt-4">
+                                                <h3 class="font-bold">Rubina Helen</h3>  
+                                                <span>Bsc, Engineering</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        
+                </div>
+                        
+                    </div>
+                </div>
+            
+         </section>
+        <section id="news-part">
+            <div class="container mx-auto px-8 mt-[130px]">
+                <div class="above pt-4">
+                    <h5 class="font-bold">From the News</h5>
+                        <div class="line w-[35px] h-[2px] bg-amber-400 mt-3 mb-3"></div>
+                        <h1 class="font-bold text-5xl mb-6">Latest News</h1> 
+                </div>
+                <div class="under grid grid-cols-1 md:grid-cols-3"> 
+                    <div class="news-item mr-6 my-6"> 
+                        <div class="pic">
+                            <img src="images/image_icon/news_image_3.jpeg" alt="">
+                        </div>
+                        <div class="pic-details pt-4">
+                            <i class="fa fa-calendar text-amber-400" aria-hidden="true"></i> 17 JULY 2019               
+                            <i class="fa-solid fa-user ml-7 text-amber-400"></i> MARK ALEN
+                        </div>
+                        <div class="pic-cont pt-4"> 
+                            <h3 class="font-bold text-blue-900 text-xl">How to Learn English Fast and Easy</h3>
+                            <p class="">Scelesrique ante plate nullam himenaeos quam <br>
+                            sollicuitudin ullacorper sodales tristique</p>
+                        </div>
+                    </div>
+                    <div class="news-item mr-6 my-6">
+                        <div class="pic">
+                            <img src="images/image_icon/news_image_2.jpg"  alt="">
+                        </div>
+                        <div class="pic-details pt-4">
+                            <i class="fa fa-calendar text-amber-400" aria-hidden="true"></i> 17 JULY 2019 
+                            <i class="fa-solid fa-user text-amber-400 ml-7"></i> MARK ALEN
+                        </div>
+                        <div class="pic-cont"> 
+                            <h3 class="font-bold text-blue-900 text-xl">How to Learn Faster and Remember</h3>
+                            <p>Scelesrique ante plate nullam himenaeos quam <br>
+                            sollicuitudin ullacorper sodales tristique</p>
+                        </div>
+                    </div>
+                    <div class="news-item mr-6 my-6">
+                        <div class="pic">
+                            <img src="images/image_icon/news_image_3.jpeg" alt="">
+                        </div>
+                        <div class="pic-details pt-4">
+                            <i class="fa fa-calendar text-amber-400" aria-hidden="true"></i> 16 JULY 2019 
+                            <i class="fa-solid fa-user text-amber-400 ml-7"></i> MARK ALEN
+                        </div>
+                        <div class="pic-cont"> 
+                            <h3 class="font-bold text-blue-900 text-xl">Free Online Courses from Top Universities</h3>
+                            <p>Scelesrique ante plate nullam himenaeos quam <br>
+                            sollicuitudin ullacorper sodales tristique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="list-icons top-16" class="">
+            <div class="container bg-[#f9f9f9] my-[50px] p-10">
+                <div class="row">
+                    <div class="slick-icons flex">
+                        <div class="slick-icon">
+                            <img src="images/image_icon/icon1.png" alt="">
+                        </div>
+                        <div class="slick-icon">
+                            <img src="images/image_icon/icon2.png" alt="">
+                        </div>
+                        <div class="slick-icon">
+                            <img src="images/image_icon/icon3.png" alt="">
+                        </div>
+                        <div class="slick-icon">
+                            <img src="images/image_icon/icon4.png" alt="">
+                        </div>
+                        <div class="slick-icon">
+                            <img src="images/image_icon/icon5.png" alt="">
+                        </div>
+                        <div class="slick-icon">
+                            <img src="images/image_icon/icon2.png" alt="">
+                        </div>
+                </div>
+            </div>
+            <!-- <script>
+                $('.slick-icons').slick({
+                arrows: false,
+                slidesToShow: 5,
+                draggable: true,
+                slidesToScroll: 1,
+                autoplaySpeed: 2000,
+                autoplay: true
+            });
+            </script> -->
+        </section>
+        
+    </div>
+</body>
+<footer class="mt-[50px]">
+    <div class="bg-[#07294d]">
+      <div class="container mx-auto px-8 footer-top md:flex tracking-wider text-white pt-[40px] pb-[70px] justify-between items-start">
+        <div class="flex-[3_3_0%] p-5">
+          <img src="https://thepixelcurve.com/html/edubin/images/logo-2.png" alt="" />
+          <p class="text-xl mb-[25px] leading-10 font-[600] mt-[25px]">
+            Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons
+            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh
+            vulputate.
+          </p>
+          <div class="flex space-x-4 items-center text-xl">
+            <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+              <a href="#" class="text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+            </span>
+            <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </span>
+            <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </span>
+            <span class="bg-[#021d3a] rounded-full px-4 py-2 hover:bg-[#ffc600] ...">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="flex-[3_3_0%] p-5">
+          <h6 class="text-[25px] pb-[20px] font-[1000]">Sitemap</h6>
+          <div class="flex text-xl">
+            <ul class="flex-1">
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Home</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">About us</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Courses</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">News</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Event</a></li>
+            </ul>
+            <ul class="flex-1">
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Gallery</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Shop</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Teachers</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Support</a></li>
+              <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Contact</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="flex-[2_2_0%] p-5">
+          <h6 class="text-[25px] pb-[20px] font-[1000]">Support</h6>
+          <ul class="text-xl">
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">FAQS</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#"></i>Pricacy</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Policy</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Support</a></li>
+            <li class="text-[18px] font-[600] pt-3 hover:text-amber-300 ..."><i class="fa fa-angle-right mr-3 text-amber-400"></i><a class="hover:ml-5 duration-1000" href="#">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="flex-[3_3_0%] p-5">
+          <h6 class="text-[25px] pb-[20px] font-[1000]">Contact Us</h6>
+          <div class="flex flex-row pt-5">
+            <div><i class="fa-solid fa-house-chimney text-amber-400 mr-5 text-xl"></i></div>
+            <div class="text-xl font-[600]">
+              143 castle road 517 district, kiyev port south Canada
+            </div>
+          </div>
+          <div class="flex items-center pt-5">
+            <div><i class="fa-solid fa-phone text-amber-400 mr-5 text-xl"></i></div>
+            <p class="text-xl font-[600]">
+              +3 123 456 789
+           </p>
+          </div>
+          <div class="flex items-center pt-5">
+            <div><i class="fa-regular fa-envelope text-amber-400 mr-5 text-xl"></i></div>
+            <p class="text-xl font-[600]">
+              info@yourmail.com
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom flex bg-[#021d3a] p-[28px] text-white text-[18px] tracking-wider">
+      <div class="flex-1 text-center font-[500]">
+        © Copyrights 2020 Edubin All rights reserved.
+      </div>
+      <div class="flex-1 text-right pr-[50px]">Designed by <b class="font-[1000]">Pixelcurve</b></div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="app.js"></script>
+</html> 

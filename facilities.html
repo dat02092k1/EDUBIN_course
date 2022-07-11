@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+<body>
+    <section id="facilities-part" class="bg-[url('https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/08/edu-bg.jpg')] bg-center pb-56 bg-no-repeat">
+        <div class="container mx-auto px-4 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 ">
+                <div class="facilities-left pt-28 pl-14 flex justify-center items-center">
+                    <div class="video  mt-4">
+                        <a class="Video-popup  ml-auto mr-auto w-[40%]" href="https://www.youtube.com/watch?v=hF12jIJkPZA">
+                            <i class="fa fa-play flex justify-center text-white items-center bg-amber-400 text-center rounded-[50%] w-[60px] h-[60px]"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="facilities-right text-white mt-8 md:ml-16">
+                    <div class="features">
+                        <div class="features-title">
+                            <h3 class=" text-2xl mt-4 font-['Montserrat'] font-bold">Our Facilities</h3>
+                        </div> 
+                        <ul class="features-items mt-4">
+                            <li class="features-item flex mt-10 mb-4">
+                                <div class="features-icon mt-3"> 
+                                    <img src="images/image_icon/facilites_certificate.png" alt="">
+                                </div>
+                                <div class="features-content ml-3">
+                                    <h4 class="text-lg font-bold">Global Certificate</h4> 
+                                    <p>Gravida nibh vel velit auctor aliquetn auci elit cons 
+                                        solliazcitudirem sem quibibendum sem nibhutis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="features-item flex mt-10 mb-4">
+                                <div class="features-icon mt-3"> 
+                                    <img src="images/image_icon/facilites_support.png" alt="">
+                                </div>
+                                <div class="features-content ml-3">
+                                    <h4 class="text-lg font-bold">Alumni Support</h4>
+                                    <p>Gravida nibh vel velit auctor aliquetn auci elit cons 
+                                        solliazcitudirem sem quibibendum sem nibhutis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="features-item flex mt-10 mb-4">
+                                <div class="features-icon mt-3"> 
+                                    <img src="images/image_icon/facilites_book.png" alt="">
+                                </div>
+                                <div class="features-content ml-3">
+                                    <h4 class="text-lg font-bold">Books & Library</h4>
+                                    <p>Gravida nibh vel velit auctor aliquetn auci elit cons 
+                                        solliazcitudirem sem quibibendum sem nibhutis.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+    $('.video').magnificPopup({
+        mainClass: "item-image__control",
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'iframe'
+    });
+</script>
+</html>
